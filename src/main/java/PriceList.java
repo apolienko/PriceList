@@ -28,7 +28,7 @@ public class PriceList {
     public Product getProduct(int code) {
 
         if (catalog.get(code) == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Товар не найден");
         }
         else return catalog.get(code);
     }
